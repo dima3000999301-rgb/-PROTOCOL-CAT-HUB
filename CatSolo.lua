@@ -2,7 +2,7 @@
     PROTOCOL | CAT HUB - AFK РЕЖИМ + НОРМАЛЬНЫЙ АИМ
     СТИЛЬ CS2 (НОКЛИП + БЕСКОНЕЧНЫЕ ПРЫЖКИ)
 ]]
-
+    
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
@@ -79,8 +79,7 @@ local screenSize = Camera.ViewportSize
 local isLandscape = screenSize.X > screenSize.Y
 
 local main = Instance.new("Frame")
-main.Size = isLandscape and UDim2.new(0, 450, 0, 550) or UDim2.new(0, 350, 0, 750)
-main.Position = UDim2.new(0.5, -175, 0.5, -250)
+main.Size = UDim2.new(0, 440, 0, 250)
 main.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
 main.BackgroundTransparency = 0.1
 main.BorderSizePixel = 3
@@ -135,7 +134,7 @@ content.Size = UDim2.new(1, -20, 1, -65)
 content.Position = UDim2.new(0, 10, 0, 55)
 content.BackgroundTransparency = 1
 content.BorderSizePixel = 0
-content.ScrollBarThickness = TouchEnabled and 4 or 8
+content.ScrollBarThickness = TouchEnabled and 8 or 8
 content.ScrollBarImageColor3 = Color3.fromRGB(0, 150, 255)
 content.CanvasSize = UDim2.new(0, 0, 0, 0)
 content.Parent = main
